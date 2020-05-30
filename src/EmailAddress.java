@@ -5,10 +5,8 @@ public class EmailAddress {
     public static void main(String[] args) {
 
         String email = "john_smith@example.com";
-        String login = email.substring(0, 10);
-        String domain = email.substring(11, 22);
-        System.out.println(login);
-        System.out.println(domain);
+        System.out.println(email.substring(0, 4) + " " + email.substring(5, 10));;
+        System.out.println(email.substring(11, 22));
 
     }
 }
