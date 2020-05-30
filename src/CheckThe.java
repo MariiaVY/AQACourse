@@ -1,3 +1,5 @@
+//4. Given two strings. Check if they start with "The".
+//   Task: word1 = "The End", word2="End The";
 public class CheckThe {
 
     public static void main(String[] args) {
