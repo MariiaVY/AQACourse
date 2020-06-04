@@ -4,8 +4,8 @@ public class FromNewLine {
     public static void main(String[] args) {
 
         String names = "Den, John, Will, Kate, Adam, Robin";
-        String[] words = names.split(" ");
-        for(String w:words){
+        String[] words = names.split(", ");
+        for(String w: words){
             System.out.println(w);
         }
     }
