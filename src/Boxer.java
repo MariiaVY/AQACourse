@@ -22,7 +22,7 @@ public class Boxer {
            else if (anotherBoxer.weight > weight);
                 Boxer2++;
             if (anotherBoxer.weight < weight);
-            Boxer1++;
+                Boxer1++;
             if (anotherBoxer.age < age)
                 Boxer1++;
             if (anotherBoxer.age > age)
@@ -39,6 +39,5 @@ public class Boxer {
             Boxer ourBoxer = new Boxer(50, 65, 100);
             Boxer anotherBoxer = new Boxer(34, 70, 40);
             System.out.println(ourBoxer.fight(anotherBoxer));
-           // System.out.println(anotherBoxer.fight(ourBoxer));
         }
 }
