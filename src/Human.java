@@ -10,14 +10,17 @@ public class Human {
     String LastName;
     int height;
 
+    Human (int w, int a, String FName, String LName, int h) {
+        weight = w;
+        age = a;
+        FName = FirstName;
+        LName = LastName;
+        h = height;
+    }
+
     static class NewHuman {
         public static void main(String[] args) {
-            Human human = new Human();
-            human.age = 50;
-            human.FirstName = "Luisa";
-            human.LastName = "Solano";
-            human.height = 168;
-            human.weight = 50;
+            Human human = new Human(50, 20,"Luisa","Solano", 168);
             System.out.println(human.FirstName + " " + human.LastName);
         }
     }
