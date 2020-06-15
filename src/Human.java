@@ -13,8 +13,8 @@ public class Human {
     Human (int w, int a, String FName, String LName, int h) {
         weight = w;
         age = a;
-        FName = FirstName;
-        LName = LastName;
+        FirstName = FName;
+        LastName = LName;
         h = height;
     }
 
