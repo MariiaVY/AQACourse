@@ -6,22 +6,22 @@ public class Human {
 
     int weight;
     int age;
-    String FirstName;
-    String LastName;
+    String firstName;
+    String lastName;
     int height;
 
-    Human (int w, int a, String FName, String LName, int h) {
+    Human (int w, int a, String fName, String lName, int h) {
         weight = w;
         age = a;
-        FirstName = FName;
-        LastName = LName;
+        firstName = fName;
+        lastName = lName;
         h = height;
     }
 
     static class NewHuman {
         public static void main(String[] args) {
             Human human = new Human(50, 20,"Luisa","Solano", 168);
-            System.out.println(human.FirstName + " " + human.LastName);
+            System.out.println(human.firstName + " " + human.lastName);
         }
     }
 }
