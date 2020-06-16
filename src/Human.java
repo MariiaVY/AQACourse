@@ -15,7 +15,7 @@ public class Human {
         age = a;
         firstName = fName;
         lastName = lName;
-        h = height;
+        height = h;
     }
 
     static class NewHuman {
