@@ -23,7 +23,7 @@ public class Boxer {
             // check weight
             if (anotherBoxer.weight > weight);
                 boxer2++;
-            else if (anotherBoxer.weight < weight);
+             if (anotherBoxer.weight < weight);
                 boxer1++;
                 
             // check age
@@ -31,14 +31,6 @@ public class Boxer {
                 boxer1++;
             else if (anotherBoxer.age > age)
                 boxer2++;
-            /*   
-            if(Boxer1 > Boxer2)
-                return true;
-            else if(Boxer1 < Boxer2)
-                return false;
-            else
-                return false;
-                */
              return boxer1 > boxer2;
         }
         public static void main(String[] args) {
