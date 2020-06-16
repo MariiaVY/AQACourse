@@ -13,27 +13,33 @@ public class Boxer {
         }
 
         public boolean fight(Boxer anotherBoxer) {
-            int Boxer1 = 0;
-            int Boxer2 = 0;
-           if (anotherBoxer.strength > strength)
-                Boxer2++;
-           if (anotherBoxer.strength < strength)
-                Boxer1++;
-           else if (anotherBoxer.weight > weight);
-                Boxer2++;
-            if (anotherBoxer.weight < weight);
-                Boxer1++;
+            int boxer1 = 0;
+            int boxer2 = 0;
+            // check strength;
+            if (anotherBoxer.strength > strength)
+                 boxer2++;
+            else if (anotherBoxer.strength < strength)
+                 boxer1++;
+            // check weight
+            if (anotherBoxer.weight > weight);
+                boxer2++;
+            else if (anotherBoxer.weight < weight);
+                boxer1++;
+                
+            // check age
             if (anotherBoxer.age < age)
-                Boxer1++;
-            if (anotherBoxer.age > age)
-                Boxer2++;
-
+                boxer1++;
+            else if (anotherBoxer.age > age)
+                boxer2++;
+            /*   
             if(Boxer1 > Boxer2)
                 return true;
             else if(Boxer1 < Boxer2)
                 return false;
             else
                 return false;
+                */
+             return boxer1 > boxer2;
         }
         public static void main(String[] args) {
             Boxer ourBoxer = new Boxer(50, 65, 100);
