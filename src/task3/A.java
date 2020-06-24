@@ -8,7 +8,7 @@
 package task3;
 
 public class A {
-    private void display()
+   private  void display()
     {
         System.out.println("Private");
     }

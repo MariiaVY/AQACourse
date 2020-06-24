@@ -12,6 +12,7 @@ public class MyClass {
     int b;
 
     static void change(int value) {
+        a = value;
         System.out.println(a + 3);
         // should change corresponding field
     }
@@ -22,7 +23,7 @@ public class MyClass {
         // should change corresponding field
     }
     public static void main(String[] args) {
-        change(a);
+        change(6);
         MyClass m = new MyClass();
         m.anotherChange(5);
     }

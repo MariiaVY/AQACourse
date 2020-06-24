@@ -11,6 +11,7 @@ public class B {
     {
         A obj = new A();
         C c = new C();
+       // obj.display();
         obj.print(); // demonstration of public access
         // obj.display();  error: display() has private access in A (demonstration of package-private access)
     }
