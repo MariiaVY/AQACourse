@@ -2,13 +2,13 @@ package task3;
 
 public class Tesla extends Car {
 
-    public Tesla(String name, String size, int numberOfSeats) {
-        super(name, size, numberOfSeats);
+    public Tesla(String name, String size) {
+        super(name, size);
     }
 
     public static void main(String args[]) {
 
-        Tesla t = new Tesla("X", "Large", 4);
+        Tesla t = new Tesla("X", "Large");
         System.out.println("Number of seats is " + t.numberOfSeats());
         t.move(220, 45);
         t.steer(70);
