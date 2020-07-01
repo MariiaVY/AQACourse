@@ -1,14 +1,15 @@
 package task1;
 
 public class A {
-    String a;
+    private String a1, a2;
+    private B b = new B();
+    private C c = new C();
 
-    A() {
-    System.out.println("Composition A");
-    a = "New Word";
-}
     @Override
     public String toString() {
-        return a;
+        return "a1 = " + a1 +
+                " a2 = " + a2 +
+                " b = " + b +
+                " c = "  + c;
     }
 }
