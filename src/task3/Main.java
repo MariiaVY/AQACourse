@@ -6,11 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
         int a = args.length;
-        System.out.println(a);
-
-        int b = 10 / a;
-        int[] c = {1};
-        System.out.println(c[1]);
-
+        try {
+            System.out.println(a);
+        }
+        catch (ArithmeticException e) {
+            int b = 10 / a;
+            int[] c = {1};
+            System.out.println(c[1]);
+        }
+        System.out.println("Division by zero");
     }
 }
