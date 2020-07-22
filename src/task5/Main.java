@@ -5,12 +5,15 @@ package task5;
 public class Main {
 
     public static void main(String[] args) {
-        iCanThrowException();
+        try {
+            iCanThrowException();
+        }
+        catch (NullPointerException e) {
+            System.out.println("Null Pointer Exception was caught");
+        }
     }
 
     public static void iCanThrowException() {
         throw new NullPointerException();
     }
-
-
 }
