@@ -5,27 +5,27 @@
 // catch the exception and display all previously entered numbers as a result.
 //Numbers output from a new line preserving the order of input.
 package task6;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 
 public class Numbers {
 
-    static Scanner scanner = new Scanner(System.in);
-
-    public static void main (String[]args){
-        System.out.println("Enter numbers ");
-        int i = readData();
-        System.out.println("You entered " + i);
+    public static void main(String[] args) {
+        readData();
     }
-    public static int readData() {
-        while (true) {
-            try {
-                return scanner.nextInt();
-            } catch (InputMismatchException e) {
-                scanner.next();
-                System.out.print("That’s not "
-                        + "an integer. Try again: ");
+    public static void readData() {
+        ArrayList<Integer> myList = new ArrayList<>();
+        Scanner s = new Scanner(System.in);
+        try {
+            while (true) {
+                System.out.print("Enter number: ");
+                myList.add(s.nextInt());
             }
+        }
+        catch (InputMismatchException e) {
+            System.out.println(myList);
+            return;
         }
     }
 }
+
+
