@@ -23,7 +23,6 @@ public class Numbers {
         }
         catch (InputMismatchException e) {
             System.out.println(myList);
-            return;
         }
     }
 }
