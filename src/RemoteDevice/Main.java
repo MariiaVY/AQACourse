@@ -13,9 +13,17 @@ package RemoteDevice;
 
 public class Main {
     public static void main(String args[]) {
-    RemoteController remoteController = new RemoteController();
-    remoteController.powerOn();
-    remoteController.checkIfDeviceConnected();
+        TV tv = new TV("Samsung", false);
 
+    RemoteController remoteController = new RemoteController(tv);
+    remoteController.powerOn();
+    remoteController.сonnectDevice(tv);
+    remoteController.checkIfDeviceConnected();
+    remoteController.downVolume();
+    remoteController.upVolume();
+    remoteController.setChannel(5);
+    remoteController.mute();
+    remoteController.disconnectDevice();
+    remoteController.checkIfDeviceConnected();
     }
 }
