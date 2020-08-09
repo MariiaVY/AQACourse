@@ -11,7 +11,7 @@ public class Task9 {
     public static void main(String[] args) throws IOException {
 
         try {
-            String data = "Hey, man!\nWhat are u doing?";
+            String data = "Hey, man!\nHow are u doing?";
             Files.write(Paths.get("outputFile.txt"), data.getBytes());
 
         } catch (IOException ex) {
